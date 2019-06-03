@@ -91,9 +91,12 @@ class LinkedInAuthController implements RequestHandlerInterface
             function (Registration $registration) use ($user) {
                 $registration
                     ->provideTrustedEmail($user->getEmail())
-                    ->provideAvatar($user->getImageUrl())
-                    ->suggestUsername($user->getFirstName().' '.$user->getLastName())
+                    ->suggestUsername($user->getFirstName().'_'.$user->getLastName())
                     ->setPayload($user->toArray());
+
+                if ($user->getImageUrl()) {
+                    $registration->provideAvatar($user->getImageUrl());
+                }
             }
         );
     }
