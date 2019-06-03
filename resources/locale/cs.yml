@@ -1,9 +1,9 @@
 nomiscz-auth-linkedin:
   forum:
     buttons:
-      login: Log in with LinkedIn
+      login: Přihlásit se přes LinkedIn
   admin:
     settings:
-      title: LinkedIn Auth Settings
+      title: Nastavení LinkedIn přihlášení
       api_app_id: API App ID
       api_app_secret: API App Secret

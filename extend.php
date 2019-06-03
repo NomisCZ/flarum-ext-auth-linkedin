@@ -11,6 +11,7 @@
 
 namespace NomisCZ\LinkedInAuth;
 
+use NomisCZ\LinkedInAuth\Http\Controllers\LinkedInAuthController;
 use Flarum\Extend;
 
 return [
@@ -20,5 +21,8 @@ return [
     (new Extend\Frontend('admin'))
         ->js(__DIR__.'/js/dist/admin.js')
         ->css(__DIR__.'/resources/less/admin.less'),
-    new Extend\Locales(__DIR__ . '/resources/locale')
+    new Extend\Locales(__DIR__ . '/resources/locale'),
+
+    (new Extend\Routes('forum'))
+        ->get('/auth/linkedin', 'auth.linkedin', LinkedInAuthController::class),
 ];
