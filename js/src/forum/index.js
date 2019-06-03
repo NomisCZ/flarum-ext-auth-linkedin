@@ -1,3 +1,4 @@
+import { extend } from 'flarum/extend';
 import app from 'flarum/app';
 
 import LogInButtons from 'flarum/components/LogInButtons';
