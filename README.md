@@ -1,4 +1,4 @@
-# NomisCZ LinkedIn Login
+# LinkedIn Login
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/nomiscz/flarum-ext-auth-linkedin.svg)](https://packagist.org/packages/nomiscz/flarum-ext-auth-linkedin)
 
